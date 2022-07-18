@@ -1,0 +1,7 @@
+/* Definir una paleta de colores para toda la aplicacion */
+:root {
+  --main-blue: #66bfbf;
+  --main-light-blue: #eaf6f6;
+  --main-white: #ffffff;
+  --main-pink: #ff0063;
+}

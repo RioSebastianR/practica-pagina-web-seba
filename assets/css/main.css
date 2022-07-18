@@ -1,10 +1,36 @@
+/* import reset CSS */
+@import "reset.css";
+@import "colors.css";
+
+:root {
+  --space-xxs: 0.5rem;
+  --space-xs: 2rem;
+  --space-md: 3rem;
+  --space-lg: 4rem;
+  --space-xl: 5rem;
+  --space-xxl: 6rem;
+}
+
+:root {
+  --font-size-xxs: 12px;
+  --font-size-xs: 14px;
+  --font-size-md: 16px;
+  --font-size-lg: 18px;
+  --font-size-xl: 20px;
+  --font-size-xxl: 24px;
+}
+
 html,
 body {
-  height: 100%;
+  font-family: "Montserrat", sans-serif;
 }
 
 body {
   margin: 0;
+  background-color: var(--main-light-blue);
+  background-image: url(./../images/bg-login.jpg);
+  background-repeat: no-repeat;
+  background-size: 100%;
 }
 
 .flex-container {
@@ -14,4 +40,22 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
+  height: 100vh;
+}
+
+h1 {
+  font-size: var(--font-size-xxl);
+  color: var(--main-blue);
+  margin-bottom: var(--space-md);
+}
+
+button {
+  font-size: var(--font-size-lg);
+  color: var(--main-white);
+  background-color: var(--main-pink);
+  margin: var(--space-xs) 0;
+  padding: var(--space-xxs);
+  border: 1px solid var(--main-blue);
+  width: 100%;
+  border-radius: var(--space-xxs);
 }

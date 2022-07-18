@@ -1,0 +1,52 @@
+/* import main CSS */
+@import "main.css";
+@import "colors.css";
+
+.login-form-wrapper {
+  display: flex;
+  flex-direction: column;
+  padding: var(--space-md);
+  border: 2px solid var(--main-pink);
+  border-radius: var(--space-xxs);
+  width: 30%;
+  background-color: var(--main-white);
+  filter: blur(100);
+}
+
+.form-control {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: var(--space-xs);
+}
+
+.form-control label {
+  margin-bottom: var(--space-xxs);
+}
+
+.form-control input {
+  border-radius: var(--space-xxs);
+  border: 2px solid var(--main-blue);
+  padding: var(--space-xxs);
+  font-size: var(--font-size-lg);
+}
+
+/*
+
+form,
+.form-control {
+  display: flex;
+  flex-direction: column;
+}
+
+h1 {
+  font-size: 2rem;
+  margin-bottom: 3rem;
+  padding-bottom: 1rem;
+  border-bottom: 1px solid lightgray;
+}
+
+button {
+  font-size: 14px;
+  padding: 3% 6%;
+  text-transform: uppercase;
+} */
