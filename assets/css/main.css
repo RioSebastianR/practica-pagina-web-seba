@@ -27,10 +27,6 @@ body {
 
 body {
   margin: 0;
-  background-color: var(--main-light-blue);
-  background-image: url(./../images/bg-login.jpg);
-  background-repeat: no-repeat;
-  background-size: 100%;
 }
 
 .flex-container {

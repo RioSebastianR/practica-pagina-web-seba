@@ -1,22 +1,51 @@
-/* import main CSS */
-@import "main.css";
+/* import reset CSS */
+@import "reset.css";
 @import "colors.css";
+
+:root {
+  --space-xxs: 0.5rem;
+  --space-xs: 1.5rem;
+  --space-md: 2.5rem;
+  --space-lg: 3.5rem;
+  --space-xl: 4.5rem;
+  --space-xxl: 6rem;
+}
+
+:root {
+  --font-size-xxs: 12px;
+  --font-size-xs: 14px;
+  --font-size-md: 16px;
+  --font-size-lg: 18px;
+  --font-size-xl: 20px;
+  --font-size-xxl: 24px;
+}
+
+html,
+body {
+  font-family: "Montserrat", sans-serif;
+}
+body {
+  margin: 0;
+  background-color: var(--main-light-beige);
+  background-image: url(./../images/imagen4.jpeg);
+  background-repeat: no-repeat;
+  background-size: 100%;
+}
 
 .login-form-wrapper {
   display: flex;
   flex-direction: column;
-  padding: var(--space-md);
-  border: 2px solid var(--main-pink);
+  padding: var(--space-md) var(--space-md) var(--space-xs);
+  border: 3px solid var(--main-light-brown);
   border-radius: var(--space-xxs);
-  width: 30%;
-  background-color: var(--main-white);
-  filter: blur(100);
+  width: 25%;
+  background-color: var(--main-beige);
 }
 
 .form-control {
   display: flex;
   flex-direction: column;
-  margin-bottom: var(--space-xs);
+  margin-bottom: var(--space-xxs);
 }
 
 .form-control label {
@@ -25,9 +54,45 @@
 
 .form-control input {
   border-radius: var(--space-xxs);
-  border: 2px solid var(--main-blue);
+  border: 2px solid var(--main-brown);
   padding: var(--space-xxs);
   font-size: var(--font-size-lg);
+}
+
+.flex-container {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+
+h1 {
+  font-size: var(--font-size-xl);
+  color: var(--main-light-brown);
+  margin-bottom: var(--space-md);
+  font-weight: bold;
+}
+
+button {
+  font-size: var(--font-size-lg);
+  color: var(--main-brown);
+  background-color: var(--main-light-piel);
+  margin: var(--space-xs) 0;
+  padding: var(--space-xxs);
+  border: 1px solid var(---main-light-piel);
+  width: 100%;
+  border-radius: var(--space-xxs);
+}
+
+.copyright {
+  font-size: smaller;
+  margin-top: var(--space-xs);
+}
+.checkbox mb-3 {
+  margin: 10px 0px 0px 0px;
 }
 
 /*
