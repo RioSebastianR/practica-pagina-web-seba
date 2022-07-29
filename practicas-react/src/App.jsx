@@ -3,13 +3,17 @@ import Header from "./components/Header";
 import Content from "./components/Content";
 import Footer from "./components/Footer";
 
+import { ChakraProvider, Box } from "@chakra-ui/react";
+
 function App() {
   return (
-    <div className="App">
-      <Header />
-      <Content />
-      <Footer />
-    </div>
+    <ChakraProvider>
+      <Box className="App">
+        <Header />
+        <Content />
+        <Footer />
+      </Box>
+    </ChakraProvider>
   );
 }
 
