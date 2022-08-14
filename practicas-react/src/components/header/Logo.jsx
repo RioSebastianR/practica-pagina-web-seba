@@ -7,7 +7,7 @@ function Logo() {
   return (
     <HStack>
       <Icon as={BsFillPieChartFill} w={6} h={6} />
-      <Box>App Name</Box>
+      <Box>Gallery Projects</Box>
     </HStack>
   );
 }

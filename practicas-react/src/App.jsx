@@ -1,18 +1,26 @@
 import "./App.css";
-import Header from "./components/Header";
-import Content from "./components/Content";
-import Footer from "./components/Footer";
-
+import { BrowserRouter, Routes, Route } from "react-router-dom";
 import { ChakraProvider, Box } from "@chakra-ui/react";
+
+import Home from "./pages/Home";
+import Login from "./pages/Login";
+import SpotifyClone from "./pages/SpotifyClone";
+import NetflixClone from "./pages/NetflixClone";
+import NotFound from "./pages/NotFound";
 
 function App() {
   return (
     <ChakraProvider>
-      <Box className="App">
-        <Header />
-        <Content />
-        <Footer />
-      </Box>
+      <BrowserRouter>
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/login" element={<Login />} />
+          <Route path="/spotify-clone" element={<SpotifyClone />} />
+          <Route path="/netflix-clone" element={<NetflixClone />} />
+          <Route path="*" element={<NotFound />} />
+        </Routes>
+      </BrowserRouter>
+      {/* <Box className="App"></Box> */}
     </ChakraProvider>
   );
 }
