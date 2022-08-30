@@ -18,8 +18,8 @@ function App() {
           <Route path="/login" element={<Login />} />
           <Route path="/spotify-clone" element={<SpotifyClone />} />
           <Route path="/netflix-clone" element={<NetflixClone />} />
-          <Route path="*" element={<NotFound />} />
           <Route path="/Register" element={<Register />} />
+          <Route path="*" element={<NotFound />} />
         </Routes>
       </BrowserRouter>
       {/* <Box className="App"></Box> */}
