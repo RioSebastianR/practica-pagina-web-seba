@@ -1,5 +1,6 @@
 import React from "react";
 import {
+  Link,
   VStack,
   Button,
   Text,
@@ -7,7 +8,7 @@ import {
   Input,
   Flex,
   Spacer,
-  ButtonGroup,
+  Checkbox,
   FormControl,
   FormLabel,
   FormErrorMessage,
@@ -29,14 +30,15 @@ function Login() {
       <VStack
         spacing="22px"
         p="20px"
-        borderRadius="3px"
+        borderRadius="5px"
         bgColor="#ffedd8"
         width="30%"
         borderStyle="solid"
         borderColor="orange.400"
         direction="column"
+        border="solid"
       >
-        <Text as="h1" fontSize="3xl">
+        <Text as="h1" fontSize="3xl" fontFamily="bold">
           Por favor inicia sesion
         </Text>
         <FormControl>
@@ -49,11 +51,16 @@ function Login() {
           <Input bgColor="white" type="password" />
           <FormHelperText>Contraseña</FormHelperText>
         </FormControl>
+
         <Button color="white" bgColor="orange.800">
           Iniciar Sesion
         </Button>
         <Text as="h4" fontSize="xl">
-          Si aun no te has registrado, hazlo
+          Si aun no te has registrado, hazlo{" "}
+          <Link color="blue.500" href="/Register">
+            {" "}
+            Aquí
+          </Link>
         </Text>
         <Text as="h5" fontSize="md">
           © 2017–2022

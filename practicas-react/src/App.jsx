@@ -7,6 +7,7 @@ import Login from "./pages/Login";
 import SpotifyClone from "./pages/SpotifyClone";
 import NetflixClone from "./pages/NetflixClone";
 import NotFound from "./pages/NotFound";
+import Register from "./pages/Register";
 
 function App() {
   return (
@@ -18,6 +19,7 @@ function App() {
           <Route path="/spotify-clone" element={<SpotifyClone />} />
           <Route path="/netflix-clone" element={<NetflixClone />} />
           <Route path="*" element={<NotFound />} />
+          <Route path="/Register" element={<Register />} />
         </Routes>
       </BrowserRouter>
       {/* <Box className="App"></Box> */}
