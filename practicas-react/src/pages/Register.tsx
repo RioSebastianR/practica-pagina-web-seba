@@ -4,7 +4,7 @@ import { PhoneIcon, AddIcon, WarningIcon } from "@chakra-ui/icons";
 import {
   InputLeftElement,
   InputGroup,
-  Link,
+  Select,
   VStack,
   Button,
   Text,
@@ -55,12 +55,12 @@ function Register() {
         >
           Registrarse
         </Text>
-        <FormControl>
+        <FormControl isRequired>
           <FormLabel>User Name / Email</FormLabel>
           <Input bgColor="white" type="email" placeholder="example@gmail.com" />
           <FormHelperText>Email</FormHelperText>
         </FormControl>
-        <FormControl>
+        <FormControl isRequired>
           <FormLabel>Password</FormLabel>
           <Input bgColor="white" type="password" placeholder="******" />
           <FormHelperText>Password</FormHelperText>
@@ -108,10 +108,11 @@ function Register() {
         </FormControl>
         <FormControl>
           <FormLabel>Country</FormLabel>
-          <InputGroup placeholder="Select country">
-            <option>Argentina</option>
-            <option>EE.UU</option>
-          </InputGroup>
+          <Select placeholder="Select Country">
+            <option value="option1">Argentina</option>
+            <option value="option2">EE.UU</option>
+            <option value="option3">Chile</option>
+          </Select>
         </FormControl>
 
         <Button color="white" bgColor="orange.800">
