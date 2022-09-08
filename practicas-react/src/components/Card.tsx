@@ -8,7 +8,12 @@ function Card(props) {
   return (
     <Link to={linkTo}>
       <Box maxW="sm" borderWidth="1px" borderRadius="lg" overflow="hidden">
-        <Image src={image.url} alt={image.alt} />
+        <Image
+          src={image.url}
+          alt={image.alt}
+          boxSize="300px"
+          objectFit="contain"
+        />
         <Box p="6">
           <Box display="flex" alignItems="baseline">
             <Box

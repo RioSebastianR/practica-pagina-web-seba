@@ -22,7 +22,7 @@ function Content() {
 
   return (
     <Flex align="center" justify="center" w="100%" h="90vh">
-      <HStack>
+      <HStack gap={4}>
         <Card title="Login" image={loginImageProps} linkTo="login" />
         <Card
           title="Spotify Clone"
