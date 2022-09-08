@@ -7,7 +7,7 @@ import Player from "../components/spotify-clone/Player";
 function SpotifyClone() {
   return (
     <>
-      <HStack gap="0" p="0">
+      <HStack spacing={0} color="white">
         <Sidebar />
         <Content />
       </HStack>
