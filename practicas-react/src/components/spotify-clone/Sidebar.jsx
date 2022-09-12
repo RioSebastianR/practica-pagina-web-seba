@@ -1,14 +1,28 @@
 import React from "react";
-import { VStack, Flex } from "@chakra-ui/react";
+import { VStack, Flex, Text, Link, Button } from "@chakra-ui/react";
 
 function Sidebar() {
   return (
     <VStack bg="black" h="100vh" w="15%" p="2">
       <Flex color="red" bg="white" h="12vh" w="100%">
-        <h2>prox. a colocar simbolo + link</h2>
+        <Text>
+          "Icono + "
+          <Link color="blue.500" href="/spotify-clone">
+            {" "}
+            Link
+          </Link>
+        </Text>
       </Flex>
-      <Flex bg="black" h="35vh" w="100%">
-        <h2>menu 2</h2>
+      <Flex direction="column">
+        <Button color="white" bgColor="blackAlpha.200">
+          Home
+        </Button>
+        <Button color="white" bgColor="blackAlpha.200">
+          Search
+        </Button>
+        <Button color="white" bgColor="blackAlpha.200">
+          My Library
+        </Button>
       </Flex>
       <Flex
         h="35vh"
