@@ -13,7 +13,6 @@ function MenuCollection(props) {
           {text}
         </Text>
       </Flex>
-      <Outlet />
     </Link>
   );
 }

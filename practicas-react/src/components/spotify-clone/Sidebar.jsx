@@ -15,7 +15,13 @@ function Sidebar() {
   return (
     <VStack bg="black" h="100vh" w="20%" p="2" spacing={10}>
       <Flex w="100%" h="2vh" p="0" m="0" direction="column">
-        <MenuItem icon={BsSpotify} text="Spotify" linkTo="/spotify-clone" />
+        <MenuItem
+          icon={BsSpotify}
+          text="Spotify"
+          linkTo="/spotify-clone"
+          fontSize="xl"
+          iconSize={{ width: 9, height: 9 }}
+        />
       </Flex>
       <Flex h="35vh" w="100%" direction="column">
         <MenuItem icon={HiHome} text="Home" linkTo="/spotify-clone" />
@@ -29,7 +35,6 @@ function Sidebar() {
           text="Library"
           linkTo="/spotify-clone/collection"
         />
-        <Outlet />
       </Flex>
       <Flex
         h="35vh"

@@ -18,8 +18,8 @@ function Content() {
       >
         <h2>HEADER FIXED</h2>
       </Flex>
-      <Flex h="100vh" bg="#111" w="100%" px={8}>
-        <h1> Content</h1>
+      <Flex h="100vh" bg="#111" w="100%" px={8} pt="5vh">
+        <Outlet />
       </Flex>
     </VStack>
   );

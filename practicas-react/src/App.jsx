@@ -9,7 +9,11 @@ import NetflixClone from "./pages/NetflixClone";
 import Register from "./pages/Register";
 import NotFound from "./pages/NotFound";
 import MenuCollection from "./components/spotify-clone/sidebar-menu/MenuCollection";
+import SpotifyTracks from "./components/spotify-clone/collection/SpotifyTracks";
 // import Cookies from "./spotify-clone/cookies";
+import SpotifyHome from "./components/spotify-clone/home/SpotifyHome";
+import SpotifySearch from "./components/spotify-clone/search/SpotifySearch";
+import SpotifyCollection from "./components/spotify-clone/collection/SpotifyCollection";
 
 function App() {
   return (
@@ -23,13 +27,16 @@ function App() {
               path="/components/spotify-clone/sidebar-menu/MenuCollection"
               element={<MenuCollection />}
             /> */}
-            {/* <Route path="/collection/tracks" element={<Tracks />} /> */}
+            <Route index element={<SpotifyHome />} />
+            <Route path="search" element={<SpotifySearch />} />
+            <Route path="collection" element={<SpotifyCollection />}>
+              <Route path="tracks" element={<SpotifyTracks />} />
+            </Route>
           </Route>
           {/* <Route path="/spotify-clone/cookies" element={<Cookies />} /> */}
           {/* <Route path="/spotify-clone/privacy-policy" element={<Privacy />} /> */}
           <Route path="/netflix-clone" element={<NetflixClone />} />
           <Route path="/Register" element={<Register />} />
-          <Route />
           <Route path="*" element={<NotFound />} />
         </Routes>
       </BrowserRouter>
