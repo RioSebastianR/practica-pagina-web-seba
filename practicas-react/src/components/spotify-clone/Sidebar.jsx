@@ -6,24 +6,24 @@ import { FaHeartbeat } from "react-icons/fa";
 import { BsSpotify } from "react-icons/bs";
 import MenuItem from "./sidebar-menu/MenuItem";
 import MenuCollection from "./sidebar-menu/MenuCollection";
+import { Link } from "@chakra-ui/react";
+
 import { Outlet } from "react-router-dom";
 // import Cookies from "/spotify-clone/cookies";
-
-// import { Link } from "react-router-dom";
 
 function Sidebar() {
   return (
     <VStack bg="black" h="100vh" w="20%" p="2" spacing={10}>
-      <Flex w="100%" h="2vh" p="0" m="0" direction="column">
+      <Flex w="100%" h="2vh" p="0" m="0" direction="column" as="b" mb="4">
         <MenuItem
           icon={BsSpotify}
           text="Spotify"
           linkTo="/spotify-clone"
-          fontSize="xl"
+          fontSize="2xl"
           iconSize={{ width: 9, height: 9 }}
         />
       </Flex>
-      <Flex h="35vh" w="100%" direction="column">
+      <Flex h="18vh" w="100%" direction="column">
         <MenuItem icon={HiHome} text="Home" linkTo="/spotify-clone" />
         <MenuItem
           icon={HiSearch}
@@ -37,7 +37,7 @@ function Sidebar() {
         />
       </Flex>
       <Flex
-        h="35vh"
+        h="60vh"
         bg="black"
         w="100%"
         borderTopWidth={1}
@@ -56,11 +56,9 @@ function Sidebar() {
           linkTo="/spotify-clone/collection/tracks"
         />
       </Flex>
-      <Flex h="20vh" bg="gray.500" w="100%" direction="column">
-        <h2>Cookies</h2>
-        <h2>Privacity</h2>
-        {/* <Cookies text="Cookies" linkTo="/spotify-clone/cookies" /> */}
-        {/* <Link text="Spotify" linkTo="/spotify-clone"></Link> */}
+      <Flex h="40vh" bg="black" w="100%" direction="column" m="0" pl="3">
+        <Link>Cookies</Link>
+        <Link>Privacity</Link>
       </Flex>
     </VStack>
   );

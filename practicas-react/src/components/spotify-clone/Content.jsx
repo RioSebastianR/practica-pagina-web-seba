@@ -1,7 +1,9 @@
 import React from "react";
-import { VStack, Flex } from "@chakra-ui/react";
-import MenuCollection from "./sidebar-menu/MenuCollection";
+import { VStack, Flex, Spacer } from "@chakra-ui/react";
+import { IoIosArrowBack, IoIosArrowForward } from "react-icons/io";
+
 import { Outlet } from "react-router-dom";
+import MenuHeader from "./content-menu/MenuHeader";
 
 function Content() {
   return (
@@ -14,9 +16,17 @@ function Content() {
         top={0}
         left="20%"
         align="center"
-        px={8}
+        px={10}
       >
-        <h2>HEADER FIXED</h2>
+        <Flex mr="5">
+          <MenuHeader icon={IoIosArrowBack} linkTo="/spotify-clone" />
+        </Flex>
+        <Flex mr="600">
+          <MenuHeader icon={IoIosArrowForward} linkTo="/spotify-clone" />
+        </Flex>
+        <Flex>
+          {/* <MenuSingup text="Singup" linkTo="/spotify-clone" /> */}
+        </Flex>
       </Flex>
       <Flex h="100vh" bg="#111" w="100%" px={8} pt="5vh">
         <Outlet />
