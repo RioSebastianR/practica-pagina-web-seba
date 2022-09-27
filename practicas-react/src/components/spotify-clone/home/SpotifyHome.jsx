@@ -1,8 +1,13 @@
 import React from "react";
 import { VStack, Flex } from "@chakra-ui/react";
+import HomePlaylists from "./HomePlaylists";
 
 function SpotifyHome() {
-  return <h2>SPOTIFY CONTENT - Home PAGE</h2>;
+  return (
+    <>
+      <HomePlaylists />
+    </>
+  );
 }
 
 export default SpotifyHome;
